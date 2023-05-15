@@ -1,6 +1,4 @@
-import React from 'react'
-
-const loading = () => {
+const LoadingPage = () => {
   return (
     <div className='d-flex justify-content-center text-success'>
       <div className='spinner-border' role='status'>
@@ -10,4 +8,4 @@ const loading = () => {
   )
 }
 
-export default loading
+export default LoadingPage
