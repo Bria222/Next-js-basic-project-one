@@ -5,7 +5,7 @@ async function fetchRepos() {
 }
 const ReposPage = async () => {
   const repos = await fetchRepos()
-  console.log(repos)
+
   return (
     <>
       <h1>{repos[0].name}</h1>
