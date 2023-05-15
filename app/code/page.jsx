@@ -15,7 +15,24 @@ const ReposPage = async () => {
         {repos.map((repo) => {
           return (
             <li class='list-group-item' key={repo.id}>
-              {repo.name}
+              <Link href={`/code/repos/${repo.name}`} className='nav-link'>
+                {' '}
+                <h5>{repo.name}</h5>
+                <p>{repo.description}</p>
+                <div className='repo-details'>
+                  <span>
+                    <FaStar /> {repo.stargazers_count}
+                  </span>
+                  <span>
+                    <FaCodeBranch />
+                    {repo.forks_count}
+                  </span>
+                  <span>
+                    <FaEye />
+                    {repo.watchers_count}
+                  </span>
+                </div>
+              </Link>
             </li>
           )
         })}
