@@ -34,6 +34,12 @@ const Header = () => {
                 </Link>
               </li>
               <li class='nav-item'>
+                <Link href='code' className='nav-link'>
+                  {' '}
+                  code
+                </Link>
+              </li>
+              <li class='nav-item'>
                 <a class='nav-link' href='contact'>
                   Contact
                 </a>
