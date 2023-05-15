@@ -1,3 +1,7 @@
-li {
-  font-weight: bolder;
+.repo-details {
+  display: flex;
+  gap: 4px;
+  padding: 10px;
+  justtify-content: space-between;
+  alighn-items: center;
 }
