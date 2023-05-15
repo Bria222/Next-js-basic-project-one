@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { FaStar, FaCodeBranch, FaEye } from 'react-icons/fa'
 async function fetchRepos() {
   const response = await fetch(`https://api.github.com/users/Bria222/repos`)
+  await new Promise((resolve) => setTimeout(resolve, 3000)) //wait 3 sec for data
   const repos = await response.json()
   return repos
 }
