@@ -5,3 +5,8 @@
   justtify-content: space-between;
   alighn-items: center;
 }
+
+.spinner-border {
+  width: 100px !important;
+  height: 100px !important;
+}
