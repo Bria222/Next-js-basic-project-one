@@ -1,7 +1,16 @@
-import React from 'react'
-
-const code = () => {
-  return <div>code</div>
+async function fetchRepos() {
+  const response = await fetch(`https://api.github.com/users/Bria222/repos`)
+  const repos = await response.json()
+  return repos
+}
+const ReposPage = async () => {
+  const repos = await fetchRepos()
+  console.log(repos)
+  return (
+    <>
+      <h1>{repos[0].name}</h1>
+    </>
+  )
 }
 
-export default code
+export default ReposPage
