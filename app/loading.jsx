@@ -1,11 +1,8 @@
 const LoadingPage = () => {
   return (
-    <div className='d-flex justify-content-center text-success'>
-      <div className='spinner-border' role='status'>
-        <span className='visually-hidden'>Loading...</span>
-      </div>
+    <div className='loader'>
+      <div className='spinner'></div>
     </div>
-  )
-}
-
-export default LoadingPage
+  );
+};
+export default LoadingPage;
